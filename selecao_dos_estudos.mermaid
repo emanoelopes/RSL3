@@ -1,0 +1,14 @@
+---
+title: Seleção dos estudos
+---
+flowchart TD
+    IEEE[("IEEE (n=15)")] --> A
+    SCOPUS[("SCOPUS (n=21)")] --> A
+    ACM[("ACM (n=107)")] --> A
+    ERIC[("ERIC (n=6)")] --> A
+    Engineering_Village[("Engineering Village (n=18)")] --> A
+    A("Estudos identificados (n=167)") -->|"Anteriores a 2019 (n=17)"| B("Entre 2019 e 2024 (n=150)")
+    B --> |"Duplicados (n=24)"| C("Resumos a serem lidos (n=126)")
+    C --> |"Resumos desclassificados (n=95)"| D("Classificados (n=31)")
+    D --> |"Indisponíveis na íntegra (n=13)"| E("Artigos completos a serem lidos (n=18)")
+    E --> |"Critério de qualidade não atendido (n=3)"| F("Estudos selecionados (n=15)")
